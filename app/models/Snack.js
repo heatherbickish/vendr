@@ -12,13 +12,15 @@ export class Snack {
 
   get snackCard() {
     return (`
-      <div roll="button" class="col-md-3">
-        <div class="img border border-1 border-dark bg-danger rounded-3 mt-3 p-5">
-          <div class="mx-5 text-white fs-4 fw-bold">
-            <span>Popcorn</span>
-            <span>1.25</span>
-            <span>Buy!</span>
-          </div>
+      <div class="col-md-4">
+        <div class="border border-1 border-dark bg-danger rounded-3 mt-3 p-5">
+        <div img="src="${this.imgUrl}" alt="${this.name}"
+        <div class="mx-5 text-white fs-4 fw-bold">
+        <p>${this.name}</p>
+        <p>${this.price}</p>
+        <button class="btn btn-dark rounded-pill mt-3">Buy!</button>
+        </div>
+        </div
         </div>
       </div>
     `)
